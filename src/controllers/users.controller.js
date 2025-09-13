@@ -5,11 +5,11 @@ import {
   updateUser,
   deleteUser,
 } from '#services/users.services.js';
+import { formatValidationError } from '#utils/format.js';
 import {
   userIdSchema,
   updateUserSchema,
 } from '#validation/users.validation.js';
-import formatValidationError from '#utils/format.js';
 
 export const fetchAllUsers = async (req, res, _next) => {
   try {
