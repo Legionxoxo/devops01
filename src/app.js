@@ -6,6 +6,7 @@ import cors from 'cors';
 import cookieParser from 'cookie-parser';
 import authRoutes from '#routes/auth.routes.js';
 import { securityMiddleware } from '#middleware/secuirty.middeware.js';
+import usersRoutes from '#routes/users.routes.js';
 
 const app = express();
 app.use(express.json());
@@ -33,6 +34,8 @@ app.get('/', (req, res) => {
 });
 
 app.use('/api/auth', authRoutes);
+
+app.use('/api/users', usersRoutes);
 
 app.get('/api', (res, req) => {
   res
