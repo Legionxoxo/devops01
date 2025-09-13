@@ -86,3 +86,16 @@
 {"level":"info","message":"User chandshgfif@gmail.com created successfully","service":"devops01","timestamp":"2025-09-12T20:19:27.464Z"}
 {"level":"info","message":"User registered successfully: chandshgfif@gmail.com","service":"devops01","timestamp":"2025-09-12T20:19:27.470Z"}
 {"level":"info","message":"::1 - - [12/Sep/2025:20:19:27 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 201 106 \"-\" \"PostmanRuntime/7.45.0\"","service":"devops01","timestamp":"2025-09-12T20:19:27.474Z"}
+{"ip":"::1","level":"warn","message":"Bot request blocked","path":"/api/auth/sign-up","service":"devops01","timestamp":"2025-09-13T08:12:31.780Z","userAgent":"PostmanRuntime/7.46.0"}
+{"level":"info","message":"::1 - - [13/Sep/2025:08:12:31 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 403 68 \"-\" \"PostmanRuntime/7.46.0\"","service":"devops01","timestamp":"2025-09-13T08:12:31.797Z"}
+{"ip":"::1","level":"warn","message":"Bot request blocked","path":"/api/auth/sign-up","service":"devops01","timestamp":"2025-09-13T08:12:48.868Z","userAgent":"PostmanRuntime/7.46.0"}
+{"level":"info","message":"::1 - - [13/Sep/2025:08:12:48 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 403 68 \"-\" \"PostmanRuntime/7.46.0\"","service":"devops01","timestamp":"2025-09-13T08:12:48.885Z"}
+{"level":"info","message":"User chandshgff@gmail.com created successfully","service":"devops01","timestamp":"2025-09-13T08:15:53.699Z"}
+{"level":"info","message":"User registered successfully: chandshgff@gmail.com","service":"devops01","timestamp":"2025-09-13T08:15:53.713Z"}
+{"level":"info","message":"::1 - - [13/Sep/2025:08:15:53 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 201 106 \"-\" \"PostmanRuntime/7.46.0\"","service":"devops01","timestamp":"2025-09-13T08:15:53.720Z"}
+{"level":"info","message":"User chandshgfff@gmail.com created successfully","service":"devops01","timestamp":"2025-09-13T08:17:05.641Z"}
+{"level":"info","message":"User registered successfully: chandshgfff@gmail.com","service":"devops01","timestamp":"2025-09-13T08:17:05.654Z"}
+{"level":"info","message":"::1 - - [13/Sep/2025:08:17:05 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 201 107 \"-\" \"PostmanRuntime/7.46.0\"","service":"devops01","timestamp":"2025-09-13T08:17:05.661Z"}
+{"level":"error","message":"User creation error User already exists","service":"devops01","stack":"Error: User already exists\n    at createUser (file:///C:/pro/devops01/src/services/auth.service.js:25:40)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async signup (file:///C:/pro/devops01/src/controllers/auth.controller.js:21:18)","timestamp":"2025-09-13T08:17:45.177Z"}
+{"level":"error","message":"Signup error User creator error","service":"devops01","stack":"Error: User creator error\n    at createUser (file:///C:/pro/devops01/src/services/auth.service.js:45:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async signup (file:///C:/pro/devops01/src/controllers/auth.controller.js:21:18)","timestamp":"2025-09-13T08:17:45.179Z"}
+{"level":"info","message":"::1 - - [13/Sep/2025:08:17:45 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 500 439 \"-\" \"PostmanRuntime/7.46.0\"","service":"devops01","timestamp":"2025-09-13T08:17:45.181Z"}

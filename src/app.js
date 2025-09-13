@@ -5,6 +5,7 @@ import morgan from 'morgan';
 import cors from 'cors';
 import cookieParser from 'cookie-parser';
 import authRoutes from '#routes/auth.routes.js';
+import { securityMiddleware } from '#middleware/secuirty.middeware.js';
 
 const app = express();
 app.use(express.json());
@@ -23,6 +24,8 @@ app.use(
     },
   })
 );
+
+app.use(securityMiddleware);
 
 app.get('/', (req, res) => {
   logger.info('Winston says Hola Amigo !!');
