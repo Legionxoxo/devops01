@@ -35,8 +35,11 @@ export const securityMiddleware = async (req, res, next) => {
 
     const decision = await client.protect(req);
 
-    //bypass the bot check when in development mode.
+    //bypass the bot check when in development mode and for health endpoint
     const isDev = process.env.NODE_ENV === 'development';
+    if (isDev || req.path === '/health') {
+      return next();
+    }
 
     if (decision.isDenied() && decision.reason.isBot() && !isDev) {
       logger.warn('Bot request blocked', {
