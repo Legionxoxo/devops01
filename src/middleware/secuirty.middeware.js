@@ -7,7 +7,7 @@ export const securityMiddleware = async (req, res, next) => {
     const role = req.user?.role || 'guest';
 
     let limit;
-    let message;
+    let message = '';
 
     switch (role) {
       case 'admin':
@@ -77,7 +77,7 @@ export const securityMiddleware = async (req, res, next) => {
 
       return res.status(403).json({
         error: 'Forbidden',
-        message: 'Too many requests',
+        message,
       });
     }
 

@@ -5,11 +5,15 @@ import {
   updateUser,
   deleteUser,
 } from '#services/users.services.js';
+import {
+  userIdSchema,
+  updateUserSchema,
+} from '#validation/users.validation.js';
+import formatValidationError from '#utils/format.js';
 
-export const fetchAllUsers = async (req, res, next) => {
+export const fetchAllUsers = async (req, res, _next) => {
   try {
     logger.info('Getting all users...');
-
     const allUsers = await getAllUsers();
 
     res.json({

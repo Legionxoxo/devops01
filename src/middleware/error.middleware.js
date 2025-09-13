@@ -1,6 +1,6 @@
 import logger from '#src/config/logger.js';
 
-export const errorMiddleware = (err, req, res, next) => {
+export const errorMiddleware = (err, req, res, _next) => {
   logger.error('Global error handler:', err);
 
   const statusCode = err.status || 500;
@@ -8,6 +8,6 @@ export const errorMiddleware = (err, req, res, next) => {
 
   res.status(statusCode).json({
     error: 'Internal Server Error',
-    message: message,
+    message,
   });
 };

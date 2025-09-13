@@ -44,7 +44,7 @@ export const getUserById = async id => {
     return user;
   } catch (e) {
     logger.error(`Error getting user by id ${id}:`, e);
-    throw error;
+    throw e;
   }
 };
 
@@ -111,6 +111,6 @@ export const deleteUser = async id => {
     return deletedUser;
   } catch (e) {
     logger.error(`Error deleting user ${id}:`, e);
-    throw error;
+    throw e;
   }
 };
